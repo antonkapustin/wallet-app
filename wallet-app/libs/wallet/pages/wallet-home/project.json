@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/wallet/pages/wallet-home/src",
+  "prefix": "wallet-app",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/wallet/pages/wallet-home"],
+      "options": {
+        "jestConfig": "libs/wallet/pages/wallet-home/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/wallet/pages/wallet-home/**/*.ts",
+          "libs/wallet/pages/wallet-home/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

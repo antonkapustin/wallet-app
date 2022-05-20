@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "ui": "libs/ui",
+    "ui-ui-header": "libs/ui/ui-header",
+    "wallet-app": "apps/wallet-app",
+    "wallet-app-e2e": "apps/wallet-app-e2e",
+    "wallet-pages-wallet-home": "libs/wallet/pages/wallet-home"
+  }
+}

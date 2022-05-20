@@ -1,0 +1,44 @@
+.header {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 20px 1fr auto 1fr 20px;
+  grid-template-rows: auto;
+  grid-template-areas: '. left . right .';
+  height: 103px;
+  margin-top: 37px;
+
+  &__block {
+    max-width: 20ch;
+    grid-area: left;
+    align-self: center;
+    justify-self: start;
+
+    &__img {
+      background-color: rgba(255, 255, 255, 0.06);
+      border-radius: 6.67px;
+      height: 5vh;
+      grid-area: right;
+      align-self: center;
+      justify-self: end;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.66px;
+    line-height: 24.2px;
+    margin: 0;
+    padding: 0;
+
+    &_huge {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.86px;
+    }
+  }
+}
